@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="shortcut icon" type="image/png" />
+        <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="grid.css" />
+        <title>Thai Music Review</title>
+        <script defer src="script.js"></script>
+        <!--Fetch script asynchronously and exected after HTML is parsed-->
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+            <img
+                src="headphones.jpg"
+                alt="the logo"
+                class="nav__logo"
+            />
+                <ul class="nav__links">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#" target="_blank" >News</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="artist/artist.html" target="_blank" >Artist</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#" target="_blank" >About Me</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__title">
+                <h1>
+                    <span class="highlight">HEAR</span><br>
+                    the<br>
+                    <span class="highlight">THAIS</span>
+                    
+                </h1>
+                <button class="btn--hear-more">Hear More</button>
+            </div>
+        </header>
+        <section class="section">
+            <div class="section_title">
+                <h2 class="section_description">News</h2>
+                <h3 class="section_header">Be the first to hear.</h3>
+                
+            </div>
+
+            <div class="features">
+                <img
+                    src="news/cgm48_mali.jpg"
+                    data-src="img/digital.jpg"
+                    alt="cgm48"
+                    class="features_img"
+                />
+                <div class="features_feature">
+          
+                    <h5 class="features_header">CGM48 First Original Song</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+                        sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+                        debitis ducimus.
+                        <button class="btn--text btn--read-more">Read More</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="features_feature">
+          
+                    <h5 class="features_header">Annalynn's Closer to the Edge</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+                        sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+                        debitis ducimus.
+                        <button class="btn--text btn--read-more2">Read More</button>
+                    </p>
+                </div>
+                <img
+                    src="news/annalynn.jpg"
+                    data-src="img/digital.jpg"
+                    alt="cgm48"
+                    class="features_img"
+                    id="annalynn"
+                />
+            </div>
+        
+        </section>
+        
+        
+        
+        
+        
+        
+        <div class="modal hidden">
+            <div class="modal-CGM">
+                    <button class="btn--close-modal">&times;</button>
+                    <h2 class="modal__header">
+                        CGM48 to launch first original Song
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                        Unde alias
+                        sint quos? Accusantium a fugiat porro reiciendis<br> saepe quibusdam
+                        debitis ducimus.
+                    </p>
+            </div>
+        </div>
+
+        <div class="modal1 hidden">
+            <div class="modal-Annalynn">
+                    <button class="btn--close-modal">&times;</button>
+                    <h2 class="modal__header">
+                        Annalynn.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                        Unde alias
+                        sint quos? Accusantium a fugiat porro reiciendis<br> saepe quibusdam
+                        debitis ducimus.
+                    </p>
+            </div>
+        </div>
+        
+        
+        
+
+
+        <div class="overlay hidden"></div>
+    </body>
+</html>
+
+    
