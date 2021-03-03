@@ -7,6 +7,8 @@ const btnReadMore = document.querySelector('.btn--read-more');
 const btnReadMore2 = document.querySelector('.btn--read-more2');
 const btnHearMore = document.querySelector('.btn--hear-more');
 const section = document.querySelector('.section');
+const newsFooter = document.querySelector('#news');
+const newsNav = document.querySelector('#news_nav');
 ///////////////////////////////////////////////////////////////
 //Modal Window
 const openModal = function (e) {
@@ -44,5 +46,13 @@ btnReadMore2.addEventListener('click', openModal);
 //Scroll
 btnHearMore.addEventListener('click', function () {
     //const sCoords = section.getBoundingClientRect();
+    section.scrollIntoView({ behavior: 'smooth' });
+})
+
+newsFooter.addEventListener('click', function () {
+    section.scrollIntoView({ behavior: 'smooth' });
+})
+
+newsNav.addEventListener('click', function () {
     section.scrollIntoView({ behavior: 'smooth' });
 })

@@ -1,0 +1,147 @@
+:root {
+    --color-primary: #5ec576;
+    --color-secondary: #ffcb03;
+    --color-tertiary: #ff585f;
+    --color-primary-darker: #4bbb7d;
+    --color-secondary-darker: #ffbb00;
+    --color-tertiary-darker: #fd424b;
+    --color-primary-opacity: #5ec5763a;
+    --color-secondary-opacity: #ffcd0331;
+    --color-tertiary-opacity: #ff58602d;
+    --gradient-primary: linear-gradient(to top left, #76837e, #fd424b);
+    --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 85.5%;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #444;
+    line-height: 1.9;
+    background-color: #f3f3f3;
+}
+
+.main-text{
+    text-align: justify;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.container {
+    width: auto;
+    margin: 20px auto 0 auto;
+    position: relative;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    height: 9rem;
+    width: 100%;
+    padding:  0 6rem;
+    z-index: 100;
+}
+
+.nav__links{
+    display: flex;
+    align-items: right;
+    list-style: none;
+    font-size: 150%;
+    margin-left: 60rem;
+    padding: 2rem 2rem;
+}
+
+.nav__item{
+    margin-left: 4rem;
+    color: black;
+}
+
+.nav__link:link,
+.nav__link:visited{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+
+.nav__item:hover,
+.nav__item:active{
+    border-bottom: 2px solid #fd424b;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mypic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25rem;
+    border-radius: 50%;
+    
+    
+}
+
+.blog-post {
+    width: 75%;
+    float: left;
+    margin-left: 15rem;
+    margin-right: auto;
+    padding: 2rem 30rem; 
+    
+}
+
+
+/*Footer*/
+.footer{
+    padding: 7rem 2rem;
+    background-color: #76837e;
+   
+}
+
+.footer_nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.footer_item{
+    margin-right: 4rem;
+}
+
+.footer_link{
+    font-size: 1.6rem;
+    color: #eee;
+    text-decoration: none;
+}
+
+.date{
+    margin-top: 1rem;
+    text-align: center;
+}
+    

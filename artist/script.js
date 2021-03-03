@@ -7,8 +7,14 @@ let currentSlide = 0;
 const maxSlide = slides.length;
 const likeBtn = document.querySelectorAll('.like-btn');
 const clicks = document.querySelectorAll('.clicks');
+const slider = document.querySelector('.slider');
+const artist = document.querySelector('#artist');
 
-console.log(likeBtn, clicks);
+const commentInput = document.querySelector('#input');
+const container = document.querySelector('.container');
+const btnAdd = document.querySelector('.btn-add');
+const commentList = document.querySelector('.comments');
+
 
 
 
@@ -54,9 +60,22 @@ likeBtn.forEach((btn, i) => {
 
 })
 
+//Adding Comment
+btnAdd.addEventListener('click', function () {
+    const comment = document.createElement('li');
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = "Delete Comment";
+    comment.innerText = input.value;
+    commentList.appendChild(comment);
 
+    input.value = "";
+    commentList.appendChild(closeBtn);
+    closeBtn.addEventListener('click', function () {
+        commentList.removeChild(comment);
+        commentList.removeChild(closeBtn);
+    })
 
-
+})
 
 
 

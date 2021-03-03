@@ -267,3 +267,26 @@ h1{
 #annalynn{
     width: 70%;
 }
+
+/*Footer*/
+.footer{
+    padding: 7rem 2rem;
+    background-color: #76837e;
+}
+
+.footer_nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.footer_item{
+    margin-right: 4rem;
+}
+
+.footer_link{
+    font-size: 1.6rem;
+    color: #eee;
+    text-decoration: none;
+}
