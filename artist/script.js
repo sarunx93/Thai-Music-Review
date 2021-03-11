@@ -15,8 +15,9 @@ const container = document.querySelector('.container');
 const btnAdd = document.querySelector('.btn-add');
 const commentList = document.querySelector('.comments');
 
-
-
+const nav = document.querySelector('.nav');
+const navHeight = nav.getBoundingClientRect().height;
+const header = document.querySelector('.header');
 
 const goToSlide = function (slide) {
     slides.forEach((s, i) => s.style.transform = `translateX(${100 * (i - slide)}%)`);
@@ -78,4 +79,27 @@ btnAdd.addEventListener('click', function () {
 })
 
 
+const stickyNav = function (entries) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) {
+        nav.classList.add('sticky');
+    }
+    else {
+        nav.classList.remove('sticky');
+    }
+}
 
+const headerObserver = new IntersectionObserver(stickyNav, {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navHeight}px`,
+});
+
+
+
+headerObserver.observe(header);
+
+
+console.log(nav);
+console.log(header);
+console.log(navHeight);

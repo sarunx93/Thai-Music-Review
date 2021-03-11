@@ -75,7 +75,10 @@ body{
     border-bottom: 2px solid #fd424b;
 }
 
-
+.nav.sticky{
+    position: fixed;
+    background-color: #76837e;
+}
 
 /*Slider*/
 .slider{

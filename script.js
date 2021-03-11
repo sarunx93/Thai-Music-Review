@@ -9,6 +9,7 @@ const btnHearMore = document.querySelector('.btn--hear-more');
 const section = document.querySelector('.section');
 const newsFooter = document.querySelector('#news');
 const newsNav = document.querySelector('#news_nav');
+const nav = document.querySelector('.nav');
 ///////////////////////////////////////////////////////////////
 //Modal Window
 const openModal = function (e) {
@@ -56,3 +57,26 @@ newsFooter.addEventListener('click', function () {
 newsNav.addEventListener('click', function () {
     section.scrollIntoView({ behavior: 'smooth' });
 })
+
+
+const header = document.querySelector('.header');
+const navHeight = nav.getBoundingClientRect().height;
+const stickyNav = function (entries) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) {
+        nav.classList.add('sticky');
+    }
+    else {
+        nav.classList.remove('sticky');
+    }
+}
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navHeight}px`,
+});
+
+
+
+headerObserver.observe(header);

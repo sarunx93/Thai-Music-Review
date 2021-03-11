@@ -46,7 +46,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 9rem;
+    height: 7rem;
     width: 100%;
     padding:  0 6rem;
     z-index: 100;
@@ -85,7 +85,10 @@ body{
     border-bottom: 2px solid #fd424b;
 }
 
-
+.nav.sticky{
+    position: fixed;
+    background-color: #76837e;
+}
 
 /*HEADER*/
 .header{
